@@ -1,13 +1,15 @@
-import React from "react"
-import RenderEmployees from "./pages/Randomemployees"
-import "./index.css"
+import React from "react";
+import "./App.css";
+import Header from "./components/Header";
+import EmployeesContainer from "./components/Container/EmployeesContainer";
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <RenderEmployees/>
-    </div>
+    <>
+      <Header />
+      <EmployeesContainer />
+    </>
   );
-}
+};
 
 export default App;
