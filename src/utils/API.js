@@ -1,9 +1,9 @@
-import axios from "axios"
+import axios from "axios";
 
-const url = 'https://randomuser.me/api/?results=50';
+const URL = "https://randomuser.me/api/?results=50&nat=us"
 
 export default {
-    ApiSearch: function () {
-        return axios.get(url)
+    getEmployees: function() {
+        return axios.get(URL);
     }
 }
